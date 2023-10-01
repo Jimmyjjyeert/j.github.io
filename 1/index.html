@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吉米的個人網站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ff.css">
+    <link rel="stylesheet" href="uu.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <audio id="background-sound" loop>
+        <source src="dd.mp3" type="audio/mp3">
+        
+    </audio>
+</head>
+<body>
+    <header>
+        <div class="profile-image">
+            <img src="ff.png" alt="吉米頭像">
+        </div>
+        <div class="profile-info">
+            <h1>嗨，我是芈樂！</h1>
+            <p>我最近不想努力所以用了gpt改了一些。</p>
+        </div>
+    </header>
+
+    <section class="about-me">
+        <h2>關於我</h2>
+        <p>無話可說,我只會html,其他都不會。</p>
+    </section>
+
+    <section class="skills">
+        <h2>技能</h2>
+        <ul>
+            <li style="background-color: #3498db;"><button onclick="toggleBackgroundSound()">開關音效</button></li>
+            <script>
+                function toggleBackgroundSound() {
+                    var audio = document.getElementById('background-sound');
+                    if (audio.paused) {
+                        audio.play();
+                    } else {
+                        audio.pause();
+                    }
+                }
+            </script>
+
+            <li style="background-color: #3498db;">睡覺</li>
+            <li style="background-color: #5f49d8;">交女朋友</li>
+            <li style="background-color: #e28d17;" data-hover-image="hhl">
+                <a href="https://www.instagram.com/jimmy._.0122/" target="_blank">偶的ig</a>
+                     </li>
+           
+            <li style="background-color: #e28d17;" data-hover-image="discord">
+           <a href="https://discord.gg/a254MZzg5s" target="_blank">dc群組</a>
+                </li>
+        </ul>
+    </section>
+
+    <section class="projects">
+         <h2>專案</h2>
+        <div class="project-card">
+            <h3>網站設計</h3>
+            <p>打造一個極具創意和功能性的網站，讓用戶愛不釋手。</p>
+        </div>
+        <div class="project-card">
+            <h3>數據分析應用</h3>
+            <p>開發了一個強大的數據分析應用，幫助企業深入了解他們的數據。</p>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <p>最愛：<a href="mailto:duoduo@example.com">資訊</a></p>
+    </footer>
+
+    
+</body>
+
+</html>
